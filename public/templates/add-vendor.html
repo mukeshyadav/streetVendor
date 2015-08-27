@@ -1,0 +1,91 @@
+<div class="form-horizontal">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Vendor Name</label>
+        <div class="col-sm-10">
+            <input type="text" name="name" id="name" class="form-control" ng-model="vendorData.name">
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="category" class="col-sm-2 control-label">Category</label>
+        <div class="col-sm-10">
+            <label class="checkbox-inline">
+                <input type="radio" name="category" id="category1" value="Veg" ng-model="vendorData.category"> Veg
+            </label>
+            <label class="checkbox-inline">
+                <input type="radio" name="category" id="category2" value="Non-veg" ng-model="vendorData.category"> Non-veg
+            </label>
+            <label class="checkbox-inline">
+                <input type="radio" name="category" id="category3" value="Veg/Non-Veg" ng-model="vendorData.category"> Veg/Non-veg
+            </label>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="famous" class="control-label col-sm-2">Famous</label>
+        <div class="col-sm-10">
+            <input type="text" name="famous" id="famous" class="form-control" ng-model="vendorData.famous">    
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="location" class="control-label col-sm-2">Location</label>
+        <div class="col-sm-10">
+            <input type="text" name="location" id="location" class="form-control" ng-model="vendorData.location">    
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="address" class="control-label col-sm-2">Address</label>
+        <div class="col-sm-10">
+            <textarea rows="3" class="form-control" id="address" name="address" ng-model="vendorData.address"></textarea>
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="pincode" class="control-label col-sm-2">Pincode</label>
+        <div class="col-sm-4">
+            <input type="text" name="pincode" id="pincode" class="form-control" ng-model="vendorData.pincode">    
+        </div>
+        <label for="tel" class="control-label col-sm-2">Tel</label>
+        <div class="col-sm-4">
+            <input type="text" name="tel" id="tel" class="form-control" ng-model="vendorData.tel">    
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="price" class="control-label col-sm-2">Price</label>
+        <div class="col-sm-2">
+            <input type="text" name="price" id="price" class="form-control" ng-model="vendorData.price">    
+        </div>
+    
+        <label for="persons" class="control-label col-sm-4">Persons</label>
+        <div class="col-sm-2">
+            <input type="text" name="persons" id="persons" class="form-control" ng-model="vendorData.persons">    
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="lat" class="control-label col-sm-2">Latitude</label>
+        <div class="col-sm-2">
+            <input type="text" name="lat" id="lat" class="form-control" ng-model="vendorData.lat">    
+        </div>
+    
+        <label for="long" class="control-label col-sm-4">Longitude</label>
+        <div class="col-sm-2">
+            <input type="text" name="long" id="long" class="form-control" ng-model="vendorData.long">    
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <label for="img" class="control-label col-sm-2">Image</label>
+        <div class="col-sm-10">
+            <input type="text" name="img" id="img" ng-model="vendorData.img" class="form-control">
+        </div>
+    </div>
+    
+    <div class="form-group text-center">
+        <button class="btn btn-primary" type="Submit" ng-click="createRecipes()">Add Vendor</button>
+    </div>
+    
+</div>

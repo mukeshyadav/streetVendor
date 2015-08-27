@@ -1,0 +1,32 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="streetRecipe">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <title>Street Food Agent Panel</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+    <style>
+        body {
+            padding-top: 100px;
+    </style>
+</head>
+<!-- SET THE CONTROLLER -->
+<body class="swag-line template-index">
+    <ng-include src="'templates/main-nav.html'" ng-controller="NavCtrl"></ng-include>
+    <div class="container" ng-view></div>
+    
+    
+    <script src="js/lib/angular.js"></script>
+    <script src="js/lib/angular-route.js"></script>
+    <script src="js/services/recipes.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/controllers/add-vendor.js"></script>
+</body>
+</html>
