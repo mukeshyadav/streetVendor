@@ -5,7 +5,7 @@ function getRecipes(res){
 
 			// if there is an error retrieving, send the error. nothing after res.send(err) will execute
 			if (err)
-				res.send(err)
+				res.send(efrr)
 
 			res.json(recipes); // return all recipes in JSON format
 		});
